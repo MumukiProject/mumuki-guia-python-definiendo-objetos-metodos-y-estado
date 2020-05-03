@@ -9,7 +9,7 @@ Aunque en el mapa real no sea así, imaginaremos que las ciudades están ubicada
 > Sabiendo esto:
 >
 > * Creá el objeto que representa a `BuenosAires`.
-> * Agregá a `Obera`, `Iruya` y `BuenosAires` un mensaje `kilometro` que devuelva la altura a la que se encuentran, según el esquema. ¡Ojo! No tenés que guardar el valor en un atributo `@kilometro` sino simplemente devolver el número que corresponde.
-> * Modificá el método `volar_hacia!` de `Pepita` la lógica necesaria para hacer el cálculo y alterar la energía. Para acceder al kilometro inicial de `Pepita` tenes que hacer `@ciudad.kilometro`.
+> * Agregá a `Obera`, `Iruya` y `BuenosAires` un mensaje `kilometro` que devuelva la altura a la que se encuentran, según el esquema. ¡Ojo! No tenés que guardar el valor en un atributo `self.kilometro` sino simplemente devolver el número que corresponde.
+> * Modificá el método `volar_hacia!` de `Pepita` la lógica necesaria para hacer el cálculo y alterar la energía. Para acceder al kilometro inicial de `Pepita` tenes que hacer `self.ciudad.kilometro`.
 
 Para que el ejemplo tenga sentido, vamos a hacer que `Pepita` arranque con la energía en 1000.

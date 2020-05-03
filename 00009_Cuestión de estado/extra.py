@@ -1,24 +1,23 @@
 module Obera
   #...más cosas que ahora no interesan...
-end
+
 
 module Pepita
-  @energia = 100
-  @ciudad = Obera
-  
+  self.energia = 100
+  self.ciudad = Obera
+
   #...más cosas que ahora no interesan...
-end
+
 
 module Kiano1100
   #...más cosas que ahora no interesan...
-end
+
 
 module RolamotoC115
   #...más cosas que ahora no interesan...
-end
+
 
 module Enrique
-  @celular = Kiano1100
-  @dinero_en_billetera = 13
-  @frase_favorita = 'la juventud está perdida'
-end
+  self.celular = Kiano1100
+  self.dinero_en_billetera = 13
+  self.frase_favorita = 'la juventud está perdida'

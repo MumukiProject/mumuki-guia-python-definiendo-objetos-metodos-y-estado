@@ -6,7 +6,7 @@ En Python, si quisiéramos **declarar** a `Norita`, escribiríamos el siguiente 
 
 ```python
 module Norita
-end
+
 ```
 
 Sí, así de simple. :grin:

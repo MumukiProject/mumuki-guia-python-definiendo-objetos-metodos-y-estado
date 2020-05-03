@@ -1,9 +1,8 @@
-describe 'Pepita' do
-  it 'entiende el mensaje ciudad' do
+describe 'Pepita':
+  it 'entiende el mensaje ciudad':
     expect(Pepita).to respond_to :ciudad
-  end
-  
-  it 'comienza en Oberá' do
+
+
+  it 'comienza en Oberá':
     expect(Pepita.ciudad).to eq Obera
-  end
-end
+

@@ -1,41 +1,40 @@
 module Obera
-  def self.kilometro
+  def self.kilometr(self):
     # completar acá...
-  end
-end
+
+
 
 module Iruya
-  def self.kilometro
+  def self.kilometr(self):
     # completar acá...
-  end  
-end
+
+
 
 module Pepita
-  @energia = 1000
-  @ciudad = Obera
-  
-  def self.energia
-    @energia 
-  end
-  
-  def self.ciudad
-    @ciudad
-  end
-  
+  self.energia = 1000
+  self.ciudad = Obera
+
+  def self.energi(self):
+    self.energia
+
+
+  def self.ciuda(self):
+    self.ciudad
+
+
   def self.cantar!
     'pri pri pri'
-  end
-  
+
+
   def self.comer_lombriz!
-    @energia += 20
-  end
-  
+    self.energia += 20
+
+
   def self.volar_en_circulos!
-    @energia -= 10
-  end
-  
-  def self.volar_hacia!(destino)
-    @energia -= # completar acá...
-    @ciudad = destino
-  end
-end
+    self.energia -= 10
+
+
+  def self.volar_hacia!(self, destino):
+    self.energia -= # completar acá...
+    self.ciudad = destino
+

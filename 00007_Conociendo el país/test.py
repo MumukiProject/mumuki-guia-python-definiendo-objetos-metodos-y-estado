@@ -1,43 +1,42 @@
 module Pepita
-  def self.energia
-    @energia
-  end  
-  
-  def self.ciudad
-    @ciudad
-  end
-end
+  def self.energi(self):
+    self.energia
 
-describe '' do
-  it 'Iruya existe' do
+
+  def self.ciuda(self):
+    self.ciudad
+
+
+
+describe '':
+  it 'Iruya existe':
     expect(Iruya).to be
-  end
-  
-  it 'Obera existe' do
+
+
+  it 'Obera existe':
     expect(Obera).to be
-  end
-  
-  context 'Pepita' do
-    it 'empieza con 100 de energía' do
+
+
+  context 'Pepita':
+    it 'empieza con 100 de energía':
       expect(Pepita.energia).to eq 100
-    end
-    
-    it 'empieza en Iruya' do
+
+
+    it 'empieza en Iruya':
       expect(Pepita.ciudad).to eq Iruya
-    end
-    
-    it 'entiende el mensaje volar_hacia!' do
+
+
+    it 'entiende el mensaje volar_hacia!':
       expect(Pepita).to respond_to :volar_hacia!
-    end
-    
-    it 'pierde 100 unidades de energía cuando vuela' do
+
+
+    it 'pierde 100 unidades de energía cuando vuela':
       Pepita.volar_hacia!(Obera)
       expect(Pepita.energia).to eq 0
-    end    
-    
-    it 'cambia de ciudad cuando vuela' do
+
+
+    it 'cambia de ciudad cuando vuela':
       Pepita.volar_hacia!(Obera)
       expect(Pepita.ciudad).to eq Obera
-    end    
-  end
-end
+
+

@@ -6,12 +6,12 @@ Ahora bien, los métodos que definiste recién no eran muy interesantes: se trat
 
 ```python
 module Pepita
-  @energia = 100
+  self.energia = 100
 
   def self.volar_en_circulos!
-    @energia = @energia - 10
-  end
-end
+    self.energia = self.energia - 10
+
+
 ```
 
 > Una vez más, ya definimos a `Pepita` por vos. Probá, en orden, las siguientes consultas:

@@ -13,10 +13,10 @@ Entonces, ¿cómo podríamos consultar la energía de `Pepita`? Declarando un m�
 module Pepita
    #...atributos y métodos anteriores...
 
-   def energia
-      @energia
-   end
-end
+   def energi(self):
+      self.energia
+
+
 ```
 
 > Ya agregamos el método `energia` por vos. Probá en la consola ahora las siguientes consultas:

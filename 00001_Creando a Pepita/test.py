@@ -1,5 +1,4 @@
-describe 'Pepita' do
-  it 'existe' do 
+describe 'Pepita':
+  it 'existe':
     expect(Pepita).to be
-  end
-end
+

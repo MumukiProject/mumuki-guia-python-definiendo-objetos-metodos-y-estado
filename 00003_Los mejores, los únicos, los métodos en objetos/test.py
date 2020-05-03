@@ -1,13 +1,12 @@
-describe 'Pepita entiende el mensaje: ' do
-  it 'cantar!' do
+describe 'Pepita entiende el mensaje: ':
+  it 'cantar!':
     expect(Pepita).to respond_to :cantar!
-  end
-  
-  it 'volar_en_circulos!' do
+
+
+  it 'volar_en_circulos!':
     expect(Pepita).to respond_to :volar_en_circulos!
-  end
-  
-  it 'comer_lombriz!' do
+
+
+  it 'comer_lombriz!':
     expect(Pepita).to respond_to :comer_lombriz!
-  end
-end
+

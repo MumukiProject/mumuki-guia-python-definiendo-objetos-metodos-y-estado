@@ -1,55 +1,54 @@
 module Pepita
-  def self.ciudad=(una_ciudad)
-    @ciudad = una_ciudad
-  end
-  
+  def self.ciudad=(self, una_ciudad):
+    self.ciudad = una_ciudad
+
+
   def self.reiniciar!
-    @ciudad = Obera
-    @energia = 1000
-  end
-end
+    self.ciudad = Obera
+    self.energia = 1000
 
-describe 'Pepita' do
-  before(:each) do
+
+
+describe 'Pepita':
+  before(:each):
     Pepita.reiniciar!
-  end
 
-  it 'entiende gastar_energia!' do
+
+  it 'entiende gastar_energia!':
     expect(Pepita).to respond_to :gastar_energia!
-  end
-  
-  it 'entiende distancia_a' do
+
+
+  it 'entiende distancia_a':
     expect(Pepita).to respond_to :distancia_a
-  end
-  
-  it 'puede calcular la distancia hasta Iruya, estando en Oberá' do
+
+
+  it 'puede calcular la distancia hasta Iruya, estando en Oberá':
     expect(Pepita.distancia_a(Iruya)).to eq 670
-  end
-  
-  it 'no pierde energía si está en Oberá y vuela a Oberá' do
+
+
+  it 'no pierde energía si está en Oberá y vuela a Oberá':
     Pepita.volar_hacia!(Obera)
     expect(Pepita.energia).to eq 1000
-  end
-  
-  it 'pierde 520 unidades de energía si está en Buenos Aires y vuela a Oberá' do
+
+
+  it 'pierde 520 unidades de energía si está en Buenos Aires y vuela a Oberá':
     Pepita.ciudad = BuenosAires
     Pepita.volar_hacia!(Obera)
     expect(Pepita.energia).to eq 480
-  end
-  
-  it 'pierde 520 unidades de energía si está en Oberá y vuela a Buenos Aires' do
+
+
+  it 'pierde 520 unidades de energía si está en Oberá y vuela a Buenos Aires':
     Pepita.volar_hacia!(BuenosAires)
     expect(Pepita.energia).to eq 480
-  end
-  
-  it 'pierde 335 unidades de energía si está en Iruya y vuela a Oberá' do
+
+
+  it 'pierde 335 unidades de energía si está en Iruya y vuela a Oberá':
     Pepita.ciudad = Iruya
     Pepita.volar_hacia!(Obera)
     expect(Pepita.energia).to eq 665
-  end  
-  
-  it 'cambia de ciudad cuando vuela' do
+
+
+  it 'cambia de ciudad cuando vuela':
     Pepita.volar_hacia!(Iruya)
     expect(Pepita.ciudad).to eq Iruya
-  end  
-end
+

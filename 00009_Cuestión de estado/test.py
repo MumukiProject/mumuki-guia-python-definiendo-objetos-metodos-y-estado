@@ -1,17 +1,16 @@
-describe 'Estado de' do
-  it 'Pepita' do
+describe 'Estado de':
+  it 'Pepita':
     expect(estado_pepita).to match_array ['energia', 'ciudad']
-  end
 
-  it 'Kiano1100' do
+
+  it 'Kiano1100':
     expect(estado_kiano1100).to eq []
-  end
 
-  it 'RolamotoC115' do
+
+  it 'RolamotoC115':
     expect(estado_rolamotoC115).to eq []
-  end  
-  
-  it 'Enrique' do
+
+
+  it 'Enrique':
     expect(estado_enrique).to match_array ['celular', 'dinero_en_billetera', 'frase_favorita']
-  end
-end
+

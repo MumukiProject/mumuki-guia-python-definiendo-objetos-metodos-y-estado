@@ -3,11 +3,11 @@ Por ejemplo, si miramos a `Pepita`:
 
 ```python
 module Pepita
-  @energia = 100
-  @ciudad = Obera
+  self.energia = 100
+  self.ciudad = Obera
 
   #...etc...
-end
+
 ```
 
 Lo que podemos observar es que su estado está conformado por `ciudad` y `energia`, dado que son sus atributos.

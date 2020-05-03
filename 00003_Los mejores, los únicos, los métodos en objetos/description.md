@@ -5,8 +5,8 @@ Para que un objeto entienda un mensaje debemos "enseñarle" cómo hacerlo, y par
 ```python
 module Pepita
    def self.cantar!
-   end
-end
+
+
 ```
 
 Un método es, entonces, la descripción de **qué hacer cuando se recibe un mensaje del mismo nombre**.

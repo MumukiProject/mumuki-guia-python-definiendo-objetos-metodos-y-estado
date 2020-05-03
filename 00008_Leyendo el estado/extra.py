@@ -1,34 +1,33 @@
 module Obera
-end
+
 
 module Iruya
-end
+
 
 module Pepita
-  @energia = 100
-  @ciudad = Obera
-  
-  def self.energia
-    @energia 
-  end
-  
+  self.energia = 100
+  self.ciudad = Obera
+
+  def self.energi(self):
+    self.energia
+
+
   def self.cantar!
     'pri pri pri'
-  end
-  
+
+
   def self.comer_lombriz!
-    @energia += 20
+    self.energia += 20
     return
-  end
-  
+
+
   def self.volar_en_circulos!
-    @energia -= 10
+    self.energia -= 10
     return
-  end
-  
-  def self.volar_hacia!(destino)
-    @energia -= 100
-    @ciudad = destino
+
+
+  def self.volar_hacia!(self, destino):
+    self.energia -= 100
+    self.ciudad = destino
     return
-  end
-end
+

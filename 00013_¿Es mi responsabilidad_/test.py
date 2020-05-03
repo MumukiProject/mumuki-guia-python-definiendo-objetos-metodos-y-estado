@@ -1,69 +1,68 @@
 module Pepita
-  def self.ciudad=(una_ciudad)
-    @ciudad = una_ciudad
-  end
-  
+  def self.ciudad=(self, una_ciudad):
+    self.ciudad = una_ciudad
+
+
   def self.reiniciar!
-    @ciudad = Obera
-    @energia = 1000
-  end
-end
+    self.ciudad = Obera
+    self.energia = 1000
 
-describe 'Buenos Aires' do
-  it 'entiende distancia_a' do
+
+
+describe 'Buenos Aires':
+  it 'entiende distancia_a':
     expect(BuenosAires).to respond_to :distancia_a
-  end
-end
 
-describe 'Obera' do
-  it 'entiende distancia_a' do
+
+
+describe 'Obera':
+  it 'entiende distancia_a':
     expect(Obera).to respond_to :distancia_a
-  end
-  
-  it 'puede calcular la distancia hasta Iruya' do
+
+
+  it 'puede calcular la distancia hasta Iruya':
     expect(Obera.distancia_a(Iruya)).to eq 670
-  end
-end
 
-describe 'Iruya' do
-  it 'entiende distancia_a' do
+
+
+describe 'Iruya':
+  it 'entiende distancia_a':
     expect(Iruya).to respond_to :distancia_a
-  end
-end
 
-describe 'Pepita' do
-  before(:each) do
+
+
+describe 'Pepita':
+  before(:each):
     Pepita.reiniciar!
-  end
-  
-  it 'no entiende distancia_a' do
+
+
+  it 'no entiende distancia_a':
     expect(Pepita).not_to respond_to :distancia_a
-  end
-  
-  it 'no pierde energía si está en Oberá y vuela a Oberá' do
+
+
+  it 'no pierde energía si está en Oberá y vuela a Oberá':
     Pepita.volar_hacia!(Obera)
     expect(Pepita.energia).to eq 1000
-  end
-  
-  it 'pierde 520 unidades de energía si está en Buenos Aires y vuela a Oberá' do
+
+
+  it 'pierde 520 unidades de energía si está en Buenos Aires y vuela a Oberá':
     Pepita.ciudad = BuenosAires
     Pepita.volar_hacia!(Obera)
     expect(Pepita.energia).to eq 480
-  end
-  
-  it 'pierde 520 unidades de energía si está en Oberá y vuela a Buenos Aires' do
+
+
+  it 'pierde 520 unidades de energía si está en Oberá y vuela a Buenos Aires':
     Pepita.volar_hacia!(BuenosAires)
     expect(Pepita.energia).to eq 480
-  end
-  
-  it 'pierde 335 unidades de energía si está en Iruya y vuela a Oberá' do
+
+
+  it 'pierde 335 unidades de energía si está en Iruya y vuela a Oberá':
     Pepita.ciudad = Iruya
     Pepita.volar_hacia!(Obera)
     expect(Pepita.energia).to eq 665
-  end  
-  
-  it 'cambia de ciudad cuando vuela' do
+
+
+  it 'cambia de ciudad cuando vuela':
     Pepita.volar_hacia!(Iruya)
     expect(Pepita.ciudad).to eq Iruya
-  end  
-end
+

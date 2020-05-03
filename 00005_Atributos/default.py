@@ -1,9 +1,8 @@
 module Pepita
-    @energia = 100
-  
+    self.energia = 100
+
     def self.volar_en_circulos!
-        @energia = @energia - 10
-    end
-  
+        self.energia = self.energia - 10
+
+
     # Seguí por acá...
-end

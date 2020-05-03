@@ -1,17 +1,16 @@
 module Obera
-  def self.kilometro
+  def self.kilometr(self):
     1040
-  end
-end
+
+
 
 module Iruya
-  def self.kilometro
+  def self.kilometr(self):
     1710
-  end  
-end
+
+
 
 module BuenosAires
-  def self.kilometro
+  def self.kilometr(self):
     0
-  end  
-end
+
