@@ -3,7 +3,7 @@ name: 'Definiendo objetos: métodos y estado'
 locale: es
 type: learning
 beta: false
-language: ruby
+language: python3
 id_format: "%05d"
 order:
 - 1

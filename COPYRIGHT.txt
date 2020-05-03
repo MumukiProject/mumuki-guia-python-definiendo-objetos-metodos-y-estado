@@ -2,4 +2,4 @@ Copyright Federico Aloi, Franco Bulgarelli, Ariel Umansky and contributors
 
 This content consists of voluntary contributions made by many
 individuals. For exact contribution history, see its revision history
-available at https://github.com/mumukiproject/mumuki-guia-ruby-definiendo-objetos-metodos-y-estado-python and the AUTHORS.txt file.
+available at https://github.com/mumukiproject/mumuki-guia-python-definiendo-objetos-metodos-y-estado-python and the AUTHORS.txt file.
