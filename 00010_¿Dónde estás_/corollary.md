@@ -1,0 +1,1 @@
+A estos métodos que sirven para conocer el valor de un atributo los llamamos **métodos de acceso** o simplemente **_accessors_**, por su nombre en inglés.

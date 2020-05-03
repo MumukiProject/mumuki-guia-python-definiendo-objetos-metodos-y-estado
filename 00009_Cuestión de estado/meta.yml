@@ -1,0 +1,10 @@
+---
+locale: es
+tags: []
+layout: input_right
+editor: code
+type: problem
+extra_visible: true
+manual_evaluation: false
+choices: []
+name: Cuestión de estado
