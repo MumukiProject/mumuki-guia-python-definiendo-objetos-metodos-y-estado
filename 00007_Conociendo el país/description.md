@@ -9,4 +9,4 @@ Ah, pero también dijimos que `Pepita` podía volar a diferentes ciudades: `Iruy
 
 Para facilitarte un poco la tarea, te dejamos en el editor tu solución del ejercicio anterior.
 
-:warning: **Importante:** por una limitación de Python, tenés que sí o sí crear a las ciudades **antes** que a `Pepita`, ya que si no fallará al ejecutar.
+>> :warning: **Importante:** por una limitación de Python, tenés que sí o sí crear a las ciudades **antes** que a `Pepita`, ya que si no fallará al ejecutar.
