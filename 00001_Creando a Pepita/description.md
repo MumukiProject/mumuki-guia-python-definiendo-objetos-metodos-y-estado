@@ -5,8 +5,7 @@ Pero como es imposible que quienes diseñan un lenguaje puedan precargar objetos
 En Python, si quisiéramos **declarar** a `Norita`, escribiríamos el siguiente código:
 
 ```python
-module Norita
-
+>>  Norita=Obj()
 ```
 
 Sí, así de simple. :grin:

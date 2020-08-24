@@ -7,6 +7,8 @@ Ahora bien, los métodos que definiste recién no eran muy interesantes: se trat
 ```python
 module Pepita
   self.energia = 100
+  
+>>  ver si funca como atributo de clase
 
   def self.volar_en_circulos!
     self.energia = self.energia - 10

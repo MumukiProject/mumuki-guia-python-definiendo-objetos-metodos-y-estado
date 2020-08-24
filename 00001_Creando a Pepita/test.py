@@ -1,4 +1,1 @@
-describe 'Pepita':
-  it 'existe':
-    expect(Pepita).to be
-
+>> type(Norita)=Obj
