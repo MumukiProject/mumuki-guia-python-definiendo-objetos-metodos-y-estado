@@ -1,3 +1,4 @@
+class Test(unittest.TestCase):
     def test_00001_Pepita_existe(self):
         Pepita = objeto()
         nuevo_identificador = "Pepita"
