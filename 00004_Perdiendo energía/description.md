@@ -10,7 +10,7 @@ module Pepita
   
 >>  ver si funca como atributo de clase
 
-  def self.volar_en_circulos!
+  def self.volar_en_circulos()
     self.energia = self.energia - 10
 
 
@@ -19,8 +19,8 @@ module Pepita
 > Una vez más, ya definimos a `Pepita` por vos. Probá, en orden, las siguientes consultas:
 >
 > ```python
-ム Pepita.volar_en_circulos!
-ム Pepita.volar_en_circulos!
+ム Pepita.volar_en_circulos()
+ム Pepita.volar_en_circulos()
 ム Pepita.energia
 ```
 > Puede que los resultados te sorprendan, en breve hablaremos de esto.

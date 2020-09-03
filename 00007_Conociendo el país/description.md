@@ -5,7 +5,7 @@ Ah, pero también dijimos que `Pepita` podía volar a diferentes ciudades: `Iruy
 > * los objetos `Iruya` y `Obera`;
 > * un atributo `ciudad` en `Pepita`: la ciudad donde actualmente está nuestra golondrina.
 > * que la `ciudad` inicial de pepita sea `Iruya`
-> * un método `volar_hacia!` en `Pepita`, que tome como argumento otra ciudad y haga lo necesario.
+> * un método `volar_hacia()` en `Pepita`, que tome como argumento otra ciudad y haga lo necesario.
 
 Para facilitarte un poco la tarea, te dejamos en el editor tu solución del ejercicio anterior.
 

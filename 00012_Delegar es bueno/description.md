@@ -4,7 +4,7 @@ En el ejercicio anterior vimos que un objeto (en ese caso, `Pepita`) le puede en
 module Pepita
   # ...etc...
 
-  def self.volar_hacia!(self, destino):
+  def self.volar_hacia(self, destino):
     self.energia -= (self.ciudad.kilometro - destino.kilometro).abs / 2
     self.ciudad = destino
 
@@ -21,7 +21,7 @@ Un objeto puede enviarse un mensaje a sí mismo fácilmente usando `self` como r
 module Pepita
   # ...etc...
 
-  def self.volar_hacia!(self, destino):
+  def self.volar_hacia(self, destino):
     self.gastar_energia!(destino) #¡Ojo! No hicimos Pepita.gastar_energia!(destino)
     self.ciudad = destino
 
