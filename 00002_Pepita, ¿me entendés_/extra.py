@@ -19,8 +19,10 @@ class pajaritoClass():
     return result
 
   def __repr__(self):
+#<description-for-student[metodo muy complicado]@
     result=type(self).pio+" soy "+self.nombre
     return result
+#@description-for-student>
 
   @property
   def energia(self):
