@@ -1,4 +1,4 @@
-#<hidden-for-student@
+#<elipsis-for-student@
 import types,collections
 
 ciudad_anterior = collections.namedtuple("ciudad_anterior", "nombre energia_partida")
@@ -67,4 +67,4 @@ class objeto:
 
 Pepita=objeto()
 
-#@hidden-for-student>
+#@elipsis-for-student>
