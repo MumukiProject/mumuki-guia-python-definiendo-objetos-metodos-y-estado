@@ -3,9 +3,12 @@ _¿Otra vez `undefined method`? ¿Y ahora qué falta?_ :rage:
 Para que un objeto entienda un mensaje debemos "enseñarle" cómo hacerlo, y para ello es necesario declarar un **método** dentro de ese objeto:
 
 ```python
+
+#definimos un procedimiento:
 def cantar(self):
-  # Seguí por acá...
-  pass
+  #línea1 del procedimiento
+  #línea2 del procedimiento
+  #línea3 del procedimiento
 
 Pepita.cantar = cantar
 ```
