@@ -8,10 +8,11 @@ class pajaritoClass():
     self._energia=100 #ej10
     self.ciudades_anteriores=list()
 
-
+#<elipsis-for-student@
   def __eq__(self,other):
     result = (id(self)==id(other))
     return result
+#@elipsis-for-student>
 
   def cantar(self):
     result = type(self).pio
