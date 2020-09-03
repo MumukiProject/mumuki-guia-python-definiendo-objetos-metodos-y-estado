@@ -68,7 +68,3 @@ class pajaritoClass():
     else:
       pass
     return self.ciudad
-
-Pepita = pajaritoClass(nombre="Pepita")
-Pepita.energia = 100
-Pepita.ciudad = Oberá

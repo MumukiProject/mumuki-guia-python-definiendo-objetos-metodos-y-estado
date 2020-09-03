@@ -64,3 +64,4 @@ class objeto:
       return super().__repr__()
 
 
+Pepita=objeto()

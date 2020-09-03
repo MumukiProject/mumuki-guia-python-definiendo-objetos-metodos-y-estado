@@ -1,5 +1,5 @@
-module Pepita
-  def self.cantar!
-
-
+def cantar(self):
   # Seguí por acá...
+  pass
+
+Pepita.cantar = cantar
