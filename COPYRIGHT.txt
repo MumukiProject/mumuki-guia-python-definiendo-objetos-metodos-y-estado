@@ -1,4 +1,4 @@
-Copyright Federico Aloi, Franco Bulgarelli, Ariel Umansky and contributors
+Copyright Federico Aloi, Franco Bulgarelli, Ariel Umansky, Leandro Batlle and contributors
 
 This content consists of voluntary contributions made by many
 individuals. For exact contribution history, see its revision history
