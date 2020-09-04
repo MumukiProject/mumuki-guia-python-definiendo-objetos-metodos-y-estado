@@ -65,7 +65,11 @@ class objeto:
       raise  AttributeError("object has no attribute '{name}' (atributo '{name}' no encontrado )".format(name=name))
 
   def __dir__(self):
-    return [attr for attr in self._attrs.keys() if not attr.startswith("_")]
+    result = [ attr for attr in self._attrs.keys() if not attr.startswith("_") ]
+    for idx,mensaje in enumerate(result):
+      if isinstance(self._attrs[mensaje], types.MethodType):
+        result[idx]=result[idx]+"()"
+    return result
 #@elipsis-for-student>
 
 # traer de la Biblioteca: objeto: ['Pepita']
