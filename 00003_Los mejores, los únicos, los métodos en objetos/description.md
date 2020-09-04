@@ -4,12 +4,12 @@ Para que un objeto entienda un mensaje debemos "enseñarle" cómo hacerlo, y par
 
 ```python
 ム #definimos un procedimiento:
-ム def cantar(self):
+ム def procedimiento(self):
 ム   #línea1 del procedimiento
 ム   #línea2 del procedimiento
-ム   #línea3 del procedimiento
+ム   #fin del procedimiento (por el indentado)
 ム
-ム Pepita.cantar = cantar
+ム Pepita.cantar = procedimiento
 ```
 
 y luego podrás _invocar_ tu método así:
