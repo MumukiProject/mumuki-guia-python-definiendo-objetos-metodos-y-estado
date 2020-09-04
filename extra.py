@@ -40,6 +40,7 @@ Iruya=ciudadClass(nombre="Iruya", kilometros=4070) #mantinene distancia con Buen
 Oberá=ciudadClass(nombre="Oberá", kilometros=3400) #mantinene distancia con BuenosAires según https://es.wikipedia.org/wiki/Ushuaia
 Obera=Oberá
 #@elipsis-for-student>
+
 # traer de la Biblioteca: clases: ['objeto']
 #<elipsis-for-student@
 class objeto:
