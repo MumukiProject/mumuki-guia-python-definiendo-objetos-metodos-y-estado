@@ -1,6 +1,6 @@
-module Pepita
-  self.energia = 100
+def volar_en_circulos(self):
+    self.energia = self.energia - 5
+    self.energia -= 5  #linea equivalente a la anterior... x - 10 == x - 5 - 5
+    return self.energia
 
-  def self.volar_en_circulos!
-    self.energia = self.energia - 10
-
+Pepita.volar_en_circulos = volar_en_circulos

@@ -5,15 +5,14 @@ Ahora bien, los métodos que definiste recién no eran muy interesantes: se trat
 ¿Cómo podríamos decir que cuando `Pepita` vuela, pierde `10` unidades de energía? ¿Y que inicialmente esta energía es `100`? Así:
 
 ```python
-module Pepita
-  self.energia = 100
-  
->>  ver si funca como atributo de clase
-
-  def self.volar_en_circulos()
-    self.energia = self.energia - 10
-
-
+ム Pepita = objeto()
+ム    
+ム Pepita.energia = 100   
+ム   
+ム def volar_en_circulos(self):   
+ム     self.energia = self.energia - 10
+ム 
+ム Pepita.volar_en_circulos = volar_en_circulos
 ```
 
 > Una vez más, ya definimos a `Pepita` por vos. Probá, en orden, las siguientes consultas:

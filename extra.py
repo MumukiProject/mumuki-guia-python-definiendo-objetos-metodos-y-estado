@@ -1,3 +1,4 @@
+# traer de la Biblioteca: ciudades: ['BuenosAires', 'Buenos_Aires', 'Iruya', 'Obera', 'Oberá', 'Ushuaia']
 #<elipsis-for-student@
 import types,collections
 
@@ -38,11 +39,13 @@ Iruya=ciudadClass(nombre="Iruya", kilometros=4070) #mantinene distancia con Buen
 
 Oberá=ciudadClass(nombre="Oberá", kilometros=3400) #mantinene distancia con BuenosAires según https://es.wikipedia.org/wiki/Ushuaia
 Obera=Oberá
-
-
+#@elipsis-for-student>
+# traer de la Biblioteca: clases: ['objeto']
+#<elipsis-for-student@
 class objeto:
-  def __init__(self):
-    self._attrs = {}
+  def __init__(self,nombre="Sin Nombre"):
+    self._attrs = dict()
+    self._attrs["nombre"]=nombre
 
   def __setattr__(self, name, value):
     if name == '_attrs':
@@ -55,16 +58,24 @@ class objeto:
   def __getattr__(self, name):
     if name == '_attrs':
       return super().__getattr__(name)
-    else:
+    elif name in self._attrs.keys():
       return self._attrs[name]
+    else: #AttributeError: 'object' object has no attribute 'dasd'
+      raise  AttributeError("object has no attribute '{name}' (atributo '{name}' no encontrado )".format(name=name))
 
-  def __repr__(self):
-    if '__repr__' in self._attrs:
-      return self._attrs['__repr__']()
-    else:
-      return super().__repr__()
+  def __dir__(self):
+    return [attr for attr in self._attrs.keys() if not attr.startswith("_")]
+#@elipsis-for-student>
 
+# traer de la Biblioteca: objeto: ['Pepita']
+#<elipsis-for-student@
+Pepita=objeto(nombre="Sin Nombre")
 
-Pepita=objeto()
+def __repr__(self):
+  pio = "priiiip priiiip"
+  result = pio + " soy " + self.nombre
+  return result
 
+Pepita.__repr__=__repr__
+Pepita.energia=100
 #@elipsis-for-student>
