@@ -9,7 +9,7 @@ Para que un objeto entienda un mensaje debemos "enseñarle" cómo hacerlo, y par
 ム   #línea2 del procedimiento
 ム   #fin del procedimiento (por el indentado)
 ム
-ム Pepita.cantar = procedimiento
+ム Pepita.cantar = procedimientonotas
 ```
 
 y luego podrás _invocar_ tu método así:
