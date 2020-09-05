@@ -18,8 +18,8 @@ Ahora bien, los métodos que definiste recién no eran muy interesantes: se trat
 > Una vez más, ya definimos a `Pepita` por vos. Probá, en orden, las siguientes consultas:
 >
 > ```python
-ム Pepita.volar_en_circulos()
-ム Pepita.volar_en_circulos()
-ム Pepita.energia
-```
+> ム Pepita.volar_en_circulos()
+> ム Pepita.volar_en_circulos()
+> ム Pepita.energia
+> ```
 > Puede que los resultados te sorprendan, en breve hablaremos de esto.

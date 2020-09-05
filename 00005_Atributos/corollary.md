@@ -1,5 +1,5 @@
-Acabamos de aprender un nuevo elemento del paradigma de objetos: los **atributos** (los cuales escribiremos anteponiendo `self.`), que no son otra cosa que **referencias** a otros objetos.
+Acabamos de aprender un nuevo elemento del paradigma de objetos: los **atributos**  que no son otra cosa que **referencias** a otros objetos y e.
 
 **_Entonces, si `energia` es una referencia a un objeto, ¿los números también son objetos?_** :open_mouth:
 <br>
-¡Claro que sí! ¡Todo-todo-todo es un objeto! :smirk:
+¡Claro que sí! ¡En Python :snake: todo-todo-todo es un objeto! :smirk:
