@@ -1,11 +1,13 @@
 Pepita = objeto()
   
 Pepita.energia = 100   
-   
-  def volar_en_circulos(self):   
-    self.energia = self.energia - 10
 
-  # Seguí por acá...
+def volar_en_circulos(self):   
+  self.energia = self.energia - 10
+  #ultima línea del procedimiento
+
+# (fin del proceidmiento por la indentación)
+# Seguí por acá...
 
 
 
