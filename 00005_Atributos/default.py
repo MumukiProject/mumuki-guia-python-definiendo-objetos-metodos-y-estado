@@ -1,8 +1,14 @@
-module Pepita
-    self.energia = 100
+Pepita = objeto()
+  
+Pepita.energia = 100   
+   
+  def volar_en_circulos(self):   
+    self.energia = self.energia - 10
 
-    def self.volar_en_circulos!
-        self.energia = self.energia - 10
+  # Seguí por acá...
 
 
-    # Seguí por acá...
+
+Pepita.volar_en_circulos = volar_en_circulos
+# y por acá ....
+
