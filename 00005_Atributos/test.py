@@ -23,7 +23,7 @@ interfaz_ejemplo = "['mensaje1','mensaje2()']"
 
 class Test(unittest.TestCase):
 
-    def test_comer_lombriz_incrementa_en_20_la_energia(self):
+  def test_comer_lombriz_incrementa_en_20_la_energia(self):
       Pepita_energia_original = 100
       Pepita.energia = Pepita_energia_original
       Pepita_energia_esperado = Pepita.energia + 20
