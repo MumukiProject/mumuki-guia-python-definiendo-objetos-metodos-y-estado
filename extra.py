@@ -108,7 +108,7 @@ class pajaritoClass():
     self.energia -= 10 #ej10
     return self.energia
 
-  def volar_hacia(self, ciudad_destino):
+  def volar_hacia(self, ciudad_destino,energia_fija=0):
     #   def self.volar_hacia!(self, una_ciudad):
     #     self.energia -= self.distancia(una_ciudad) * 3
     #     self.ciudad = una_ciudad
@@ -120,9 +120,12 @@ class pajaritoClass():
       nombre_desde = self.ciudad.nombre
     volar_desde=ciudad_anterior(nombre=nombre_desde, energia_partida=self.energia)
     if True:# TODO: validar energia necesaria, energia actual, destino
-      self.ciudades_anteriores.append(volar_desde)
-      if self.ciudad is not None:
-        self.energia -= self.ciudad.distancia_con(ciudad_destino) * 3
+      if energia_fija > 0:
+        self.energia -= energia_fija
+      else:
+        self.ciudades_anteriores.append(volar_desde)
+        if self.ciudad is not None:
+          self.energia -= self.ciudad.distancia_con(ciudad_destino) * 3
       self.ciudad = ciudad_destino
     else:
       pass
