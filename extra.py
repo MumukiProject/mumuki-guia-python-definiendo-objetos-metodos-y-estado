@@ -1,4 +1,4 @@
-# traer de la Biblioteca: ciudades: ['BuenosAires', 'Buenos_Aires', 'Iruya', 'Obera', 'Oberá', 'Ushuaia']
+# traer de la Biblioteca: ciudades: ['BuenosAires', '_Buenos_Aires', '_Iruya', '_Obera', '_Oberá', '_Ushuaia']
 #<elipsis-for-student@
 import types,collections
 
@@ -30,15 +30,113 @@ class ciudadClass:
   def __repr__(self):
     return self.nombre
 
-Ushuaia = ciudadClass("Ushuaia",0) # cercana al centro geográfico de Argentina según https://www.ign.gob.ar/gallery-app/mapas-escolares/medium/argentina_bicontinental_fisico.jpg
+class pajaritoClass():
+  pio='priiiip priiiip'
 
-BuenosAires = ciudadClass("BuenosAires",2360) #CABA está lejos de muuchas ciudades, incluyendo al centro geográfico de Argentina: https://es.wikipedia.org/wiki/Ushuaia
-Buenos_Aires = BuenosAires
+  def __init__(self,nombre="Pajarito"):
+    self.nombre=nombre
+    self._ciudad=None
+    self._energia=100 #ej10
+    self.ciudades_anteriores=list()
 
-Iruya=ciudadClass(nombre="Iruya", kilometros=4070) #mantinene distancia con BuenosAires, pero no respeta https://es.wikipedia.org/wiki/Ushuaia
 
-Oberá=ciudadClass(nombre="Oberá", kilometros=3400) #mantinene distancia con BuenosAires según https://es.wikipedia.org/wiki/Ushuaia
-Obera=Oberá
+  def __eq__(self,other):
+    # necesario para 00003_El derecho a la Identidad
+    # TODO: obj1==obj2 no funciona en el runner
+    result = (id(self)==id(other))
+    return result
+
+  def cantar(self):
+    result = type(self).pio
+    return result
+
+  def __repr__(self):
+    result=type(self).pio+" soy "+self.nombre
+    return result
+
+  @property
+  def energia(self):
+    return self._energia
+
+  @energia.setter
+  def energia(self,ahora_vale):
+    #energia.setter
+    #
+    #   def self.energia=(self, una_energia):
+    #     self.energia = una_energia
+    #   def self.energi(self):
+    #     self.energia
+    self._energia=ahora_vale     #validacion?
+
+
+  @property
+  def ciudad(self):
+    return self._ciudad
+
+  @ciudad.setter
+  def ciudad(self,ahora_es):
+    #ciudad.setter: validacion? TODO: usar volar_hacia() ?
+    self._ciudad=ahora_es
+
+  def cantar(self):
+    #   def self.cantar!
+    #     'pri pri pri'
+    return type(self).pio
+
+  def comer_lombriz(self):
+    #   def self.comer_lombriz!
+    #     self.energia += 20
+    #     return
+    self.energia += 20 #ej10
+    return self.energia
+
+  def comer_alpiste(self,energia_adicional):
+    #   def self.comer_alpiste!(self, una_energia):
+    #     self.energia += una_energia * 15
+    #     return
+    self.energia += energia_adicional * 15 #TODO: validar entrada
+    # no seria mejor asi:
+    #def comer_alpiste(self, gramos):
+    # energia_adicional = gramos * 15
+    # self.energia += energia_adicional
+    return self.energia
+
+  def volar_en_circulos(self):
+    #   def self.volar_en_circulos!
+    #     self.energia -= 10
+    #     return
+    self.energia -= 10 #ej10
+    return self.energia
+
+  def volar_hacia(self, ciudad_destino):
+    #   def self.volar_hacia!(self, una_ciudad):
+    #     self.energia -= self.distancia(una_ciudad) * 3
+    #     self.ciudad = una_ciudad
+    #     return
+
+    if self.ciudad is None:
+      nombre_desde = None
+    else:
+      nombre_desde = self.ciudad.nombre
+    volar_desde=ciudad_anterior(nombre=nombre_desde, energia_partida=self.energia)
+    if True:# TODO: validar energia necesaria, energia actual, destino
+      self.ciudades_anteriores.append(volar_desde)
+      if self.ciudad is not None:
+        self.energia -= self.ciudad.distancia_con(ciudad_destino) * 3
+      self.ciudad = ciudad_destino
+    else:
+      pass
+    return self.ciudad
+
+_Ushuaia = ciudadClass("Ushuaia",0) # cercana al centro geográfico de Argentina según https://www.ign.gob.ar/gallery-app/mapas-escolares/medium/argentina_bicontinental_fisico.jpg
+
+_BuenosAires = ciudadClass("BuenosAires",2360) #CABA está lejos de muuchas ciudades, incluyendo al centro geográfico de Argentina: https://es.wikipedia.org/wiki/Ushuaia
+_Buenos_Aires = _BuenosAires
+
+_Iruya=ciudadClass(nombre="Iruya", kilometros=4070) #mantinene distancia con BuenosAires, pero no respeta https://es.wikipedia.org/wiki/Ushuaia
+
+_Oberá=ciudadClass(nombre="Oberá", kilometros=3400) #mantinene distancia con BuenosAires según https://es.wikipedia.org/wiki/Ushuaia
+_Obera=_Oberá
 #@elipsis-for-student>
 
 # traer de la Biblioteca: clases: ['objeto']
