@@ -1,11 +1,3 @@
-import unittest
-# module Pepita
-#   def self.energi(self):
-#     self.energia
-#
-#
-#   def self.ciuda(self):
-#     self.ciudad
 sombra_de_Pepita=pajaritoClass()
 sombra_de_Pepita.energia = 100
 sombra_de_Pepita.ciudad = _Oberá
