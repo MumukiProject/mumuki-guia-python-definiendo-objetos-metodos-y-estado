@@ -40,6 +40,11 @@ class Test(unittest.TestCase):
                      "Pepita.energia valía originalmente {original}, luego del mensaje volar_en_circulos() debió quedar con {esperado}".format(
                        original=Pepita_energia_original, esperado=Pepita_energia_esperado))
 
+  def test_tus_procedimientos_usan_la_nueva_sintaxis(self):
+    import inspect
+    pass
+
+
 #
 #
 # describe 'Pepita':
