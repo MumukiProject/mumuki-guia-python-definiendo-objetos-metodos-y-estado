@@ -1,23 +1,22 @@
-module Obera
-  #...más cosas que ahora no interesan...
+Oberá = objeto()
+#...más cosas que ahora no interesan...
+
+Pepita = objeto()
+Pepita.energia = 100
+Pepita.ciudad = Oberá
+
+Norita = objeto()
+Norita.energia = 200
+Norita.ciudad = None
 
 
-module Pepita
-  self.energia = 100
-  self.ciudad = Obera
+Kiano1100 = objeto()  #grandioso "ralulec" de todos los tiempos!!!
+#...más cosas que ahora no interesan...
 
-  #...más cosas que ahora no interesan...
+RolamotoC115  = objeto() #otro memorable "ralulec" 
+#...más cosas que ahora no interesan...
 
-
-module Kiano1100
-  #...más cosas que ahora no interesan...
-
-
-module RolamotoC115
-  #...más cosas que ahora no interesan...
-
-
-module Enrique
-  self.celular = Kiano1100
-  self.dinero_en_billetera = 13
-  self.frase_favorita = 'la juventud está perdida'
+Beto = objeto()
+Beto.celular = Kiano1100
+Beto.dinero_en_billetera = 13
+Beto.frase_favorita = 'el futuro ya no es lo que era'

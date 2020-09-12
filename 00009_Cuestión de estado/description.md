@@ -1,22 +1,37 @@
 Los objetos pueden tener múltiples atributos y al conjunto de estos atributos se lo denomina **estado**.
-Por ejemplo, si miramos a `Pepita`:
+Por ejemplo, démosle un estado a `Pepita`:
 
 ```python
-module Pepita
-  self.energia = 100
-  self.ciudad = Obera
-
-  #...etc...
-
+ム Oberá=objeto()
+ム Pepita=objeto()
+ム #...atributos y métodos anteriores...
+ム Pepita.energia=100
+ム Pepita.ciudad = Oberá
+ム #...etc...
 ```
 
-Lo que podemos observar es que su estado está conformado por `ciudad` y `energia`, dado que son sus atributos.
+Lo que podemos observar es que su estado está conformado por `ciudad` y `energia`, dado que son sus atributos. 
 
-El estado es siempre **privado**, es decir, solo el objeto puede utilizar sus atributos, lo que explica por qué las siguiente consultas que hicimos antes fallaban:
+Ahora démosle su  estado a `Norita`:
 
 ```python
-ム Pepita.energia = 100
+ム Norita.energia = 50 # parte del estado de Norita
+ム Norita.ciudad = None  # parte del estado de Norita
+```
+
+Es de notar que el *estado* es siempre parte del **espacio de nombres** de un objeto, es decir, una variable "vive" en ese *espacio de nombres* independientemente de los otros *espacios de nombres*.  
+
+Lo que explica las diferencias entre las salidas a las  siguientes sentencias:
+
+```python
 ム energia
+ム ciudad
+ム Pepita.energia
+ム Pepita.ciudad
+ム Norita.energia
+ム Norita.ciudad
 ```
 
-> Veamos si se entiende: mirá los objetos en la solapa **Biblioteca** y escribí el estado de cada uno.
+> Veamos si se entiende: 
+> 1) probá en la consola todas las sentencias ante
+> 2) los objetos en la solapa **Biblioteca** y escribí el estado de cada uno.
