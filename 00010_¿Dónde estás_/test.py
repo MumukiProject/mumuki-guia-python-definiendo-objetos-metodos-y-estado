@@ -8,7 +8,7 @@ class Test(unittest.TestCase):
     """
     espero="ciudad_actual()"
     self.assertTrue(espero in dir(Pepita),
-                         "método '{metodo}' tiene qe ser parte de la interfaz de {nombre}".format(metodo=espero),nombre="Pepita")
+                         "método '{metodo}' tiene qe ser parte de la interfaz de {nombre}".format(metodo=espero,nombre="Pepita"))
 
   def test_el_mensaje_ciudad__actual_devuelve_el_atributo_ciudad(self):
     """
