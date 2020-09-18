@@ -9,3 +9,5 @@ def energia_subir(self, porcentaje):
   return self.energia
 
 Pepita.energia_subir = energia_subir
+
+del(energia_subir)
