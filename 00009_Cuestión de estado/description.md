@@ -19,7 +19,7 @@ Ahora démosle su  estado a `Norita`:
 ム Norita.ciudad = None  # parte del estado de Norita
 ```
 
-Es de notar que el *estado* es siempre parte del **espacio de nombres** de un objeto, es decir, una variable "vive" en ese *espacio de nombres* independientemente de los otros *espacios de nombres*.  
+Es de notar que el *estado* es siempre parte del **espacio de nombres** de un objeto, es decir, una variable "vive" en ese *espacio de nombres* independientemente de los otros espacios de nombres.  
 
 Lo que explica las diferencias entre las salidas a las  siguientes sentencias:
 
@@ -33,5 +33,6 @@ Lo que explica las diferencias entre las salidas a las  siguientes sentencias:
 ```
 
 > Veamos si se entiende: 
-> 1) probá en la consola todas las sentencias ante
-> 2) los objetos en la solapa **Biblioteca** y escribí el estado de cada uno.
+> 1) probá en la consola todas las sentencias anteriores   
+> 2) repasá los objetos en la solapa **Biblioteca** 
+> 3) escribí en la consola **Consola** el estado de cada uno

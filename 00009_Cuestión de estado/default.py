@@ -1,16 +1,23 @@
-estado_pepita = %w(
-  energia
-  ciudad
-)
-  
-estado_kiano1100 = %w(
-  #...completar acá...
-)
-  
-estado_rolamotoC115 = %w(
-  #...completar acá...
-) 
+# estado de Pepita, lista COMPLETA de miembros
+estado_pepita = [
+  "energia",
+  "ciudad",
+]
 
-estado_enrique = %w(
+# estado de Norita
+estado_norita = [
+  #...completar acá según la solapa **Biblioteca**...
+]
+
+# estado de kiano1100
+estado_kiano1100 = [
+  #...completar acá según la solapa **Biblioteca**...
+]
+
+estado_rolamotoC115 = [
+  #...completar acá...
+]
+
+estado_enrique = [
   #...completar acá...  
-)
+]

@@ -9,12 +9,9 @@ Norita = objeto()
 Norita.energia = 200
 Norita.ciudad = None
 
+Kiano1100 = objeto()  #grandioso "ralulec"
 
-Kiano1100 = objeto()  #grandioso "ralulec" de todos los tiempos!!!
-#...más cosas que ahora no interesan...
-
-RolamotoC115  = objeto() #otro memorable "ralulec" 
-#...más cosas que ahora no interesan...
+RolamotoC115  = objeto() #otro memorable "lularcel"
 
 Beto = objeto()
 Beto.celular = Kiano1100
