@@ -2,10 +2,10 @@ Los objetos pueden tener múltiples atributos y al conjunto de estos atributos s
 Por ejemplo, démosle un estado a `Pepita`:
 
 ```python
-ム Oberá=objeto()
-ム Pepita=objeto()
+ム Oberá = objeto()
+ム Pepita = objeto()
 ム #...atributos y métodos anteriores...
-ム Pepita.energia=100
+ム Pepita.energia = 100
 ム Pepita.ciudad = Oberá
 ム #...etc...
 ```
@@ -33,7 +33,7 @@ Lo que explica las diferencias entre las salidas a las  siguientes sentencias:
 ```
 
 > Veamos si se entiende: 
-> 1) probá en la consola todas las sentencias anteriores   
-> 2) repasá los objetos en la solapa `</>Biblioteca`   
-> 3) escribí en la solapa `>_Consola` el estado de cada uno   
+> 1) solapa `>_Consola`: probá las sentencias anteriores   
+> 2) solapa `</>Biblioteca`: recorré los objetos declarados   
+> 3) solapa `Solución`: listá todos los estado de los objetos anteriores   
 
