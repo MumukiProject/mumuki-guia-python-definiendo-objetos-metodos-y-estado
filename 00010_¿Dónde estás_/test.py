@@ -15,7 +15,7 @@ class Test(unittest.TestCase):
       it 'comienza en Oberá':
         expect(Pepita.ciudad).to eq Obera
     """
-    cartel="método {nombre}.ciudad_actual() tiene devolver al atributo {nombre}.ciudad".format(nombre="Pepita")
+    cartel="el método {nombre}.ciudad_actual() tiene devolver al atributo {nombre}.ciudad".format(nombre="Pepita")
     self.assertEqual(Pepita.ciudad_actual(),Pepita.ciudad,cartel)
 
 
