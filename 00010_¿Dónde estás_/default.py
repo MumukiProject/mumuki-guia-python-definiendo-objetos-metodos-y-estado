@@ -1,24 +1,11 @@
-module Pepita
-  self.energia = 100
-  self.ciudad = Obera
+Pepita = objeto()
 
-  def self.energi(self):
-    self.energia
+Pepita.energia = 100
+Pepita.ciudad = Oberá
 
+def energia_actual(self):
+  return self.energia
 
-  def self.cantar!
-    'pri pri pri'
+Pepita.energia_actual = energia_actual
 
-
-  def self.comer_lombriz!
-    self.energia += 20
-
-
-  def self.volar_en_circulos!
-    self.energia -= 10
-
-
-  def self.volar_hacia!(self, destino):
-    self.energia -= 100
-    self.ciudad = destino
 
