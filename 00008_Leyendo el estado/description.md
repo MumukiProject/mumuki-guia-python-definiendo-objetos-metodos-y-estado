@@ -5,7 +5,7 @@ Antes te mostramos que podemos *declarar* nuevos atributos de un objeto:
 ム  Pepita.energia=100
 ```
 
-Veamos que pasa si enviamos el mensaje `energia()` al objeto `Pepita`:
+Veamos que que si enviamos el mensaje `energia()` al objeto `Pepita`:
 
 ```python
 ム  Pepita.energia("subir 20%")
@@ -25,7 +25,8 @@ Pepita.energia=100
 def energia_subir(self,porcentaje):
     self.energia = self.energia * (1 + porcentaje / 100) # para subir 25%, multiplicamos por 1.25
     return self.energia 
-    
+
+Pepita.energia_subir = energia_subir
 ```
 
 > Ya agregamos el método `energia_subir` por vos. Probá en la consola ahora las siguientes consultas:
