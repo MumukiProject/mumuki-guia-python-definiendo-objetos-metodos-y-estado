@@ -34,5 +34,6 @@ Lo que explica las diferencias entre las salidas a las  siguientes sentencias:
 
 > Veamos si se entiende: 
 > 1) probá en la consola todas las sentencias anteriores   
-> 2) repasá los objetos en la solapa **Biblioteca** 
-> 3) escribí en la consola **Consola** el estado de cada uno
+> 2) repasá los objetos en la solapa `</>Biblioteca`   
+> 3) escribí en la solapa `>_Consola` el estado de cada uno   
+
