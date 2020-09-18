@@ -34,6 +34,8 @@ Pepita = objeto()
 Pepita.energia = 100
 
 def energia_subir(self, porcentaje):
-  self.energia = self.energia * (1 + porcentaje / 100)  # para subir 25%, multiplicamos por 1.25
+  # si el argumento en porcentaje es 25, para subir 25%, hay que multiplicar por 1.25
+  self.energia = self.energia * (1 + porcentaje / 100)
   return self.energia
 
+Pepita.energia_subir = energia_subir
