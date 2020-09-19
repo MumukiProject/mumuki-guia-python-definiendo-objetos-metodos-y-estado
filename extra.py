@@ -131,6 +131,8 @@ class pajaritoClass():
       pass
     return self.ciudad
 
+_Marambio = ciudadClass("Marambio",-1200) #https://es.wikipedia.org/wiki/Base_Marambio
+
 _Ushuaia = ciudadClass("Ushuaia",0) # cercana al centro geográfico de Argentina según https://www.ign.gob.ar/gallery-app/mapas-escolares/medium/argentina_bicontinental_fisico.jpg
 
 _BuenosAires = ciudadClass("BuenosAires",2360) #CABA está lejos de muuchas ciudades, incluyendo al centro geográfico de Argentina: https://es.wikipedia.org/wiki/Ushuaia
