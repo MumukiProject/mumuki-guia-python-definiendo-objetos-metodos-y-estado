@@ -20,8 +20,10 @@ class Test(unittest.TestCase):
   def test_existen_las_ciudades_del_enunciado(self):
     for identificador_esperado in ("BuenosAires","Oberá","Iruya"):
       cartel="tiene que existir el objeto {identificador_esperado}".format(identificador_esperado=identificador_esperado)
-      self.assertTrue("Iruya" in dir(),cartel)
-
+      
+    BuenosAires.nombre="BuenosAires"
+    Iruya.nombre="Iruya"
+    Oberá.nombre="Oberá"
   def test_las_ciudades_saben_en_qué_kilómetro_están(self):
     for c, cnombre, km in ((BuenosAires, _BuenosAires.nombre, _BuenosAires.kilometros),
                                  (Oberá,_Oberá.nombre,_Oberá.kilometros), (Iruya,_Iruya.nombre,_Iruya.kilometros)):
