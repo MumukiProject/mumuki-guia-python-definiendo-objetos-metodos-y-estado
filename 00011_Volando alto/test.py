@@ -20,7 +20,7 @@ class Test(unittest.TestCase):
   def test_existen_las_ciudades_del_enunciado(self):
     for identificador_esperado in ("BuenosAires","Oberá","Iruya"):
       cartel="tiene que existir el objeto {identificador_esperado}".format(identificador_esperado=identificador_esperado)
-      self.assertTrue(identificador_esperado in dir(),cartel)
+      self.assertTrue("Iruya" in dir(),cartel)
 
   def test_las_ciudades_saben_en_qué_kilómetro_están(self):
     for c, cnombre, km in ((BuenosAires, _BuenosAires.nombre, _BuenosAires.kilometros),
@@ -52,26 +52,15 @@ class Test(unittest.TestCase):
     Pepita.volar_hacia(BuenosAires)
     Pepita.energia=1000
     Pepita.volar_hacia(Oberá)
-    cartel="al recibir el mensaje {nombre}.volar_hacia({destino}), nuestra golondrina partió de {origen} (km {kmOrigen}) con 1000 de energía. Al llegar a {destino} (km {kmDestino}) tendría que haber perdido 0.5*({kmDestino}-{kmOrigen}) de energía".format(nombre="Pepita",
-                                                                                                                                                                                                                                      kmDestino=_Oberá.kilometros,
-                                                                                                                                                                                                                                      kmOrigen=_BuenosAires.kilometros,
-                                                                                                                                                                                                                                      destino=_Oberá.nombre,
-                                                                                                                                                                                                                                      origen=_BuenosAires.nombre)
+    cartel="al recibir el mensaje {nombre}.volar_hacia({destino}), nuestra golondrina partió de {origen} (km {kmOrigen}) con 1000 de energía. Al llegar a {destino} (km {kmDestino}) tendría que haber perdido 0.5*({kmDestino}-{kmOrigen}) de energía".format(nombre="Pepita",kmDestino=_Oberá.kilometros,kmOrigen=_BuenosAires.kilometros,destino=_Oberá.nombre,origen=_BuenosAires.nombre)
     self.assertEqual(Pepita.energia_actual(),480,cartel)
 
   def test_pierde_520_unidades_de_energía_si_está_en_Oberá_y_vuela_a_Buenos_Aires(self):
     Pepita.volar_hacia(Oberá)
     Pepita.energia=1000
     Pepita.volar_hacia(BuenosAires)
-    cartel="al recibir el mensaje {nombre}.volar_hacia({destino}), nuestra golondrina partió de {origen} (km {kmOrigen}) con 1000 de energía. Al llegar a {destino} (km {kmDestino}) tendría que haber perdido 0.5*({kmOrigen}-{kmDestino}) de energía".format(nombre="Pepita",
-                                                                                                                                                                                                                                      kmOrigen=_Oberá.kilometros,
-                                                                                                                                                                                                                                      kmDestino=_BuenosAires.kilometros,
-                                                                                                                                                                                                                                      origen=_Oberá.nombre,
-                                                                                                                                                                                                                                      destino=_BuenosAires.nombre)
+    cartel="al recibir el mensaje {nombre}.volar_hacia({destino}), nuestra golondrina partió de {origen} (km {kmOrigen}) con 1000 de energía. Al llegar a {destino} (km {kmDestino}) tendría que haber perdido 0.5*({kmOrigen}-{kmDestino}) de energía".format(nombre="Pepita",kmOrigen=_Oberá.kilometros,kmDestino=_BuenosAires.kilometros,origen=_Oberá.nombre,destino=_BuenosAires.nombre)
     self.assertEqual(Pepita.energia_actual(),480,cartel)
-
-
-
 
   def test_cambia_de_ciudad_cuando_vuela(self):
     """
