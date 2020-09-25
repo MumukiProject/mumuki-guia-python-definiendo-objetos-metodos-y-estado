@@ -6,9 +6,9 @@ Aunque en el mapa real no sea así, imaginaremos que las ciudades están ubicada
 
 <img src="https://raw.githubusercontent.com/MumukiProject/mumuki-guia-python-definiendo-objetos-metodos-y-estado/master/assets/ciudades.png" width="500" />
 
-Entonces, para ir de Ushuaia a BuenosAires, `Pepita` necesitaría 1195 unidades de energía, calculadas como 0.5*(2390-0) 
+Entonces, para ir de Ushuaia a BuenosAires, `Pepita` necesitaría 1190 unidades de energía, calculadas como 0.5*(2390-0) 
 
-Otro ejemplo: para ir de Oberá a Marambio , `Pepita` necesitaría 1100 unidades de energía, calculadas como 0.5*(3400-(-1200)) 
+Otro ejemplo: para ir de Oberá a Marambio , `Pepita` necesitaría 2300 unidades de energía, calculadas como 0.5*(3400-(-1200)) 
 
 Es decir, siempre se resta el número mas positivo al numero menos positivo.
 
