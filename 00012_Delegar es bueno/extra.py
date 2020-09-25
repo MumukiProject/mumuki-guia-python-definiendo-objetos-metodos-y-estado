@@ -6,12 +6,12 @@ def kilómetro(self):
 Marambio.kilómetro = kilómetro
 
 
-Uhuaia = objeto()
+Ushuaia = objeto()
 
 def kilómetro(self):
     return 0
 
-Uhuaia.kilómetro = kilómetro
+Ushuaia.kilómetro = kilómetro
 
 
 Oberá = objeto()
