@@ -36,7 +36,9 @@ Pepita.volar_hacia = volar_hacia
 
 Pero esto se puede mejorar un poco más... notaste que el *método* `gastar_energia` está haciendo más cosas que sólo gastar energía? :astonished:
 
-> Hagamos que `gastar_energia` *sólo gaste energía*, haciendo su nombre mas "significativo", y el cálculo de la distancia lo haga un nuevo método de Pepita llamado `distancia_a(destino)`, que devuelva (*retorne*) la distancia en Km entre `self.ciudad` y el argumento.
+> Hagamos que `gastar_energia` *sólo gaste energía*, haciendo su nombre mas "significativo", y el cálculo de la distancia lo haga un nuevo método de Pepita llamado `distancia_a(destino)`, que devuelva (*retorne*) la distancia en Km entre `self.ciudad` y el argumento.   
+
+el resultado esperado, si lo probás en la `>_Consola`, sería:
 
 ```Python
 ム Pepita.volar_hacia(Ushuaia)
