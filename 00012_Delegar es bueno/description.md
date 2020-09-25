@@ -3,8 +3,8 @@ En el ejercicio anterior vimos que un objeto (en ese caso, `Pepita`) le puede en
 ```python
 Pepita = objeto()
 def volar_hacia(self, destino):
-    numeroMayor = max(self.kilómetro(), destino.kilómetro())  #acá Pepita envía dos mensajes... los ves?
-    numeroMenor = min(self.kilómetro(), destino.kilómetro())  #envía OTROS dos mensajes... 
+    numeroMayor = max(self.ciudad.kilómetro(), destino.kilómetro())  #acá Pepita envía dos mensajes... los ves?
+    numeroMenor = min(self.ciudad.kilómetro(), destino.kilómetro())  #envía OTROS dos mensajes... 
     self.energia -= 0.5 * ( numeroMayor - numeroMenor ) #por fin... calculamos! OJO con el '-='
     self.ciudad = destino
 Pepita.volar_hacia = volar_hacia
@@ -20,8 +20,10 @@ Un objeto puede enviarse un mensaje a sí mismo fácilmente usando `self` como r
 Pepita = objeto()
 
 def gastar_energia(self, destino): #¡Ojo! No hicimos Pepita.gastar_energia!(destino)
-    distancia=max(self.ciudad.kilómetro(),destino.kilómetro())-min(self.ciudad.kilómetro(),destino.kilómetro())
-    self.energia -= 0.5*distancia
+    numeroMayor = max(self.ciudad.kilómetro(), destino.kilómetro())  #acá Pepita envía dos mensajes... los ves?
+    numeroMenor = min(self.ciudad.kilómetro(), destino.kilómetro())  #envía OTROS dos mensajes... 
+    self.energia -= 0.5 * ( numeroMayor - numeroMenor ) #por fin... calculamos! OJO con el '-='
+
 
 def volar_hacia(self, destino):
     self.gastar_energia(destino)
