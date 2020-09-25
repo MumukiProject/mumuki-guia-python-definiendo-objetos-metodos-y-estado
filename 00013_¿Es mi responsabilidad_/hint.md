@@ -1,3 +1,1 @@
-Con las herramientas que vimos hasta ahora, no queda más opción que repetir el mismo código en las tres ciudades. :pensive:
-
-¡Muy pronto lo solucionaremos!
+Con las herramientas que vimos hasta ahora, tenemos la opción de *no repetir* el mismo código en las tres ciudades. te parece? :pensive:

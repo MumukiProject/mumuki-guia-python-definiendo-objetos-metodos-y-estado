@@ -20,7 +20,7 @@ class Test(unittest.TestCase):
     self.assertEqual(Pepita.distancia_a(Oberá),670,cartel)
 
 
-  def test_no_pierde_energía_si_está_en_Oberá_y_vuela_a_Oberá(self):
+  def test_Pepita_no_pierde_energía_si_está_en_Oberá_y_vuela_a_Oberá(self):
     """
       it 'no pierde energía si está en Oberá y vuela a Oberá':
         Pepita.volar_hacia!(Obera)
@@ -33,7 +33,7 @@ class Test(unittest.TestCase):
     self.assertEqual(Pepita.energia_actual(),energia_antes,cartel)
 
 
-  def test_pierde_520_unidades_de_energía_si_está_en_Buenos_Aires_y_vuela_a_Oberá(self):
+  def test_Pepita_pierde_520_unidades_de_energía_si_está_en_Buenos_Aires_y_vuela_a_Oberá(self):
     """
     it 'pierde 520 unidades de energía si está en Buenos Aires y vuela a Oberá':
       Pepita.ciudad = BuenosAires
@@ -46,7 +46,7 @@ class Test(unittest.TestCase):
     cartel="al recibir el mensaje {nombre}.volar_hacia({destino}), nuestra golondrina partió de {origen} (km {kmOrigen}) con 1000 de energía. Al llegar a {destino} (km {kmDestino}) tendría que haber perdido 0.5*({kmDestino}-{kmOrigen}) de energía".format(nombre="Pepita",kmDestino=_Oberá.kilometros,kmOrigen=_BuenosAires.kilometros,destino=_Oberá.nombre,origen=_BuenosAires.nombre)
     self.assertEqual(Pepita.energia_actual(),480,cartel)
 
-  def test_pierde_520_unidades_de_energía_si_está_en_Oberá_y_vuela_a_Buenos_Aires(self):
+  def test_Pepita_pierde_520_unidades_de_energía_si_está_en_Oberá_y_vuela_a_Buenos_Aires(self):
     Pepita.volar_hacia(Oberá)
     Pepita.energia=1000
     Pepita.volar_hacia(BuenosAires)
