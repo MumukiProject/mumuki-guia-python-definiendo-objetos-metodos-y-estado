@@ -1,32 +1,28 @@
-module Pepita
-  self.energia = 1000
-  self.ciudad = Obera
 
-  def self.energi(self):
-    self.energia
+Pepita = objeto()
 
+Pepita.energia = 1000
 
-  def self.ciuda(self):
-    self.ciudad
+Pepita.ciudad = Oberá
 
+def energia_actual(self):
+    return self.energia
 
-  def self.cantar!
-    'pri pri pri'
+Pepita.energia_actual = energia_actual
 
+def ciudad_actual(self):
+    return self.ciudad
 
-  def self.comer_lombriz!
-    self.energia += 20
+Pepita.ciudad_actual = ciudad_actual
 
+def gastar_energia(self, destino):
+  self.energia -= 0.5 * (max(self.ciudad.kilómetro(), destino.kilómetro()) - min(self.ciudad.kilómetro(), destino.kilómetro()))
+  
+Pepita.gastar_energia = gastar_energia
 
-  def self.volar_en_circulos!
-    self.energia -= 10
+def volar_hacia(self, destino):
+  self.gastar_energia(destino)
+  self.ciudad = destino
 
-
-  def self.volar_hacia!(self, destino):
-    self.gastar_energia!(destino)
-    self.ciudad = destino
-
-
-  def self.gastar_energia!(self, destino):
-    self.energia -= (self.ciudad.kilometro - destino.kilometro).abs / 2
+Pepita.volar_hacia = volar_hacia
 

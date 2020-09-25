@@ -1,14 +1,12 @@
-En el ejercicio anterior vimos que un objeto (en ese caso, `Pepita`) le puede enviar mensajes a otro que conozca (en ese caso, ciudades como `Obera` o `BuenosAires`):
+En el ejercicio anterior vimos que un objeto (en ese caso, `Pepita`) le puede enviar mensajes a otro que conozca (en ese caso, ciudades como `Oberá` o `BuenosAires`):
 
 ```python
-module Pepita
-  # ...etc...
-
-  def self.volar_hacia(self, destino):
-    self.energia -= (self.ciudad.kilometro - destino.kilometro).abs / 2
+Pepita = objeto()
+def volar_hacia(self, destino):
+    distancia=max(self.ciudad.kilómetro(),destino.kilómetro())-min(self.ciudad.kilómetro(),destino.kilómetro())
+    self.energia -= 0.5*distancia
     self.ciudad = destino
-
-
+Pepita.volar_hacia = volar_hacia
 ```
 
 Esto se conoce como _delegar una responsabilidad_, o simplemente, **delegar**: la responsabilidad de saber en qué kilómetro se encuentra es de la ciudad, y no de `Pepita`.
@@ -18,18 +16,24 @@ A veces nos va a pasar que un objeto tiene un método muy complejo, y nos gustar
 Un objeto puede enviarse un mensaje a sí mismo fácilmente usando `self` como receptor del mensaje.
 
 ```python
-module Pepita
-  # ...etc...
+Pepita = objeto()
 
-  def self.volar_hacia(self, destino):
-    self.gastar_energia!(destino) #¡Ojo! No hicimos Pepita.gastar_energia!(destino)
+def gastar_energia(self, destino): #¡Ojo! No hicimos Pepita.gastar_energia!(destino)
+    distancia=max(self.ciudad.kilómetro(),destino.kilómetro())-min(self.ciudad.kilómetro(),destino.kilómetro())
+    self.energia -= 0.5*distancia
+
+def volar_hacia(self, destino):
+    self.gastar_energia(destino)
     self.ciudad = destino
 
-
-  def self.gastar_energia!(self, destino):
-    self.energia -= (self.ciudad.kilometro - destino.kilometro).abs / 2
-
+Pepita.gastar_energia = gastar_energia
+Pepita.volar_hacia = volar_hacia
 
 ```
 
-> Pero esto se puede mejorar un poco más. Delegá el cálculo de la distancia en un método `distancia_a`, que tome un destino y devuelva la distancia desde la ciudad actual hasta el destino.
+> Pero esto se puede mejorar un poco más. Delegá el cálculo de la distancia a los objetos que sean ciudades. El nuevo  método `distancia_a`, toma un destino y devuelve la distancia desde la ciudad `self` hasta el destino.
+> Por ejemplo: 
+```Python
+ム Ushuaia.distancia_a(Marambio)
+=> 1200
+```
