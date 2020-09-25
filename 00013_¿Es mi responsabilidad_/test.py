@@ -26,8 +26,8 @@ class Test(unittest.TestCase):
     #   it 'no entiende distancia_a':
     #     expect(Pepita).not_to respond_to :distancia_a
     """
-    espero="distancia_a"
-    self.assertTrue(espero in dir(Pepita),
+    espero="distancia_a()"
+    self.assertFalse(espero in dir(Pepita),
                          "método '{metodo}' tiene no tiene que ser parte de la interfaz de {nombre}".format(metodo=espero,nombre="Pepita"))
 
   def test_Pepita_no_pierde_energía_si_está_en_Oberá_y_vuela_a_Oberá(self):
