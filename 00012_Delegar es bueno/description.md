@@ -3,7 +3,9 @@ En el ejercicio anterior vimos que un objeto (en ese caso, `Pepita`) le puede en
 ```python
 Pepita = objeto()
 def volar_hacia(self, destino):
-    distancia=max(self.ciudad.kilómetro(),destino.kilómetro())-min(self.ciudad.kilómetro(),destino.kilómetro())
+    numeroMayor = max(self.kilómetro(), destino.kilómetro())  #acá Pepita envía dos mensajes... los ves?
+    numeroMenor = min(self.kilómetro(), destino.kilómetro())  #envía OTROS dos mensajes... 
+    distancia=numeroMayor - numeroMenor
     self.energia -= 0.5*distancia
     self.ciudad = destino
 Pepita.volar_hacia = volar_hacia
