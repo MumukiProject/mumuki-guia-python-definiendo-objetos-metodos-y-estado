@@ -5,8 +5,8 @@ Pepita = objeto()
 def volar_hacia(self, destino):
     numeroMayor = max(self.kilómetro(), destino.kilómetro())  #acá Pepita envía dos mensajes... los ves?
     numeroMenor = min(self.kilómetro(), destino.kilómetro())  #envía OTROS dos mensajes... 
-    distancia=numeroMayor - numeroMenor
-    self.energia -= 0.5*distancia
+    distancia = numeroMayor - numeroMenor
+    self.energia -= 0.5 * distancia #por fin... calculamos! OJO con el '-='
     self.ciudad = destino
 Pepita.volar_hacia = volar_hacia
 ```
