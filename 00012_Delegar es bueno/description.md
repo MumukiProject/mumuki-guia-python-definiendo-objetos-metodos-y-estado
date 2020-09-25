@@ -33,11 +33,12 @@ Pepita.volar_hacia = volar_hacia
 
 ```
 
-> Pero esto se puede mejorar un poco más. Delegá el cálculo de la distancia a los objetos que sean ciudades. El nuevo  método `distancia_a`, toma un destino y devuelve la distancia desde la ciudad `self` hasta el destino.
+> Pero esto se puede mejorar un poco más. Delegá el cálculo de la distancia a los objetos que sean ciudades. El nuevo  método de Pepita, llamado `distancia_a`, toma un destino y devuelve la distancia desde la ciudad `self.ciudad` hasta el destino.
 > Por ejemplo:   
 
 
 ```Python
-ム Ushuaia.distancia_a(Marambio)
+ム Pepita.volar_hacia(Ushuaia)
+ム Pepita.distancia_a(Marambio)
 => 1200
 ```

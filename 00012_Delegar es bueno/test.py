@@ -8,14 +8,16 @@ class Test(unittest.TestCase):
     Pepita.volar_hacia(_Iruya)
     Pepita.gastar_energia(_Iruya)
 
-  def test_puede_calcular_la_distancia_hasta_Iruya_estando_en_Oberá(self):
+  def test_Pepita_puede_calcular_la_distancia_hasta_Iruya_estando_en_Oberá(self):
     """
     it 'puede calcular la distancia hasta Iruya, estando en Oberá':
       expect(Pepita.distancia_a(Iruya)).to eq 670
     """
-    cartel="La distancia entre Iruya y Oberá es de 670 Km"
-    self.assertEqual(Iruya.distancia_a(Oberá),670,cartel)
-    self.assertEqual(Oberá.distancia_a(Iruya),670,cartel)
+    cartel="La distancia entre Iruya y Oberá es de 670 Km. Tanto de ida, como de vuelta ;)"
+    Pepita.volar_hacia(Oberá)
+    self.assertEqual(Pepita.distancia_a(Iruya),670,cartel)
+    Pepita.volar_hacia(Iruya)
+    self.assertEqual(Pepita.distancia_a(Oberá),670,cartel)
 
 
   def test_no_pierde_energía_si_está_en_Oberá_y_vuela_a_Oberá(self):
