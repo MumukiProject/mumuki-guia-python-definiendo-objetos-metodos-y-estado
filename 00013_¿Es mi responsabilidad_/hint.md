@@ -1,1 +1,1 @@
-Con las herramientas que vimos hasta ahora, tenemos la opción de *no repetir* el mismo código en las tres ciudades. te parece? :tada:
+Con las herramientas que vimos hasta ahora, tenemos la opción de *no repetir* el mismo código para todas las ciudades. te parece? :tada:
