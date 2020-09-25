@@ -1,8 +1,8 @@
 Antes te mostramos que podemos *declarar* nuevos atributos de un objeto:
 
 ```python
-ム  Pepita=objeto()
-ム  Pepita.energia=100
+ム  Pepita = objeto()
+ム  Pepita.energia = 100
 ```
 
 Veamos que que si enviamos el mensaje `energia()` al objeto `Pepita`:
@@ -18,9 +18,9 @@ El motivo es simple: **los atributos NO son mensajes**.
 Entonces, ¿cómo podríamos incrementar la energía de `Pepita`? Declarando un *método*, ¡por supuesto!
 
 ```python
-Pepita=objeto()
+Pepita = objeto()
 #...atributos y métodos anteriores...
-Pepita.energia=100
+Pepita.energia = 100
 
 def energia_subir(self,porcentaje):
     self.energia = self.energia * (1 + porcentaje / 100) # para subir 25%, multiplicamos por 1.25

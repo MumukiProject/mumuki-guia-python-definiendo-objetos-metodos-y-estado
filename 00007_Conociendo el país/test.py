@@ -22,7 +22,7 @@ Pepita=pajaritoClass()
 class Test(unittest.TestCase):
   # it 'empieza en Iruya':
   #     expect(Pepita.ciudad).to eq Iruya
-  def Pepita_tiene_comenzar_en_Iruya_con_100_de_energia(self):
+  def test_Pepita_tiene_comenzar_en_Iruya_con_100_de_energia(self):
     self.assertEqual(sombra_de_Pepita.energia,Pepita.energia,"Pepita.energia vale {} pero debe comenzar con {}".format(Pepita.energia,sombra_de_Pepita.energia))
     args=dict()
     args["espero"] = sombra_de_Pepita.ciudad.nombre
@@ -30,7 +30,7 @@ class Test(unittest.TestCase):
     args["mensaje"] = "Pepita.energia vale {} pero debe comenzar con {}".format(args["obtengo"],args["espero"])
     self.assertEqual(args["espero"],args["obtengo"],args["mensaje"])
 
-  def Pepita_entiende_el_mensaje_volar_hacia(self):
+  def test_Pepita_entiende_el_mensaje_volar_hacia(self):
     # it 'entiende el mensaje volar_hacia!':
     #   expect(Pepita).to respond_to :volar_hacia!
     args=dict()
@@ -39,7 +39,7 @@ class Test(unittest.TestCase):
     args["mensaje"] = "Pepita tiene que entender el mensaje {}, por ahora entiende {}".format(args["member"],args["container"])
     self.assertIn(args["member"],args["container"],args["mensaje"])
 
-  def Pepita_pierde_100_unidades_de_energía_cuando_vuela(self):
+  def test_Pepita_pierde_100_unidades_de_energía_cuando_vuela(self):
     # it 'pierde 100 unidades de energía cuando vuela':
     #   Pepita.volar_hacia!(Obera)
     #   expect(Pepita.energia).to eq 0
@@ -60,7 +60,7 @@ class Test(unittest.TestCase):
     self.assertEqual(args["espero"],args["obtengo"],args["mensaje"])
 
 
-  def Pepita_cambia_de_ciudad_cuando_vuela(self):
+  def test_Pepita_cambia_de_ciudad_cuando_vuela(self):
     # it 'cambia de ciudad cuando vuela':
     #   Pepita.volar_hacia!(Obera)
     #   expect(Pepita.ciudad).to eq Obera

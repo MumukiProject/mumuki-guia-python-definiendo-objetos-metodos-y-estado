@@ -11,11 +11,13 @@ estado_norita = [
 
 # estado de kiano1100
 estado_kiano1100 = [
-  #...completar acá según la solapa **Biblioteca**...
+  "...completar acá...",
+  "según la solapa **Biblioteca**..."
 ]
 
 estado_rolamotoC115 = [
-  #...completar acá...
+  "...completar acá...",
+  "según la solapa **Biblioteca**..."
 ]
 
 estado_enrique = [

@@ -16,7 +16,7 @@ Decimos que `Pepita` _conoce_ o _tiene_ un nivel de energía, que es variable, y
  1. en un método del mismo objeto:  `self.atributo = 100`.
  1. por un mensaje al objeto:  `objeto.atributo = 100`.
 
-`self` viene del Inglés, significa _propio_ (en este caso "propio" al objeto en cuestión), y el uso es bastante intuitivo, comparemos como sería Castellanmo y en Python:
+`self` viene del Inglés, significa _propio_ (en este caso "propio" al objeto en cuestión), y el uso es bastante intuitivo, comparemos como sería Castellano y en Python:
 
 Castellano | Python
 ---|---

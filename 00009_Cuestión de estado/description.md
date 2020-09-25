@@ -32,8 +32,9 @@ Lo que explica las diferencias entre las salidas a las  siguientes sentencias:
 ム Norita.ciudad
 ```
 
-> Veamos si se entiende: 
+Veamos si se entiende... hacé lo siguiente: 
+
 > 1) solapa `>_Consola`: probá las sentencias anteriores   
 > 2) solapa `</>Biblioteca`: recorré los objetos declarados   
-> 3) solapa `Solución`: listá todos los estado de los objetos anteriores   
+> 3) solapa `✐ Solución`: listá todos los estado de los objetos anteriores   
 
