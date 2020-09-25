@@ -5,7 +5,8 @@ class Test(unittest.TestCase):
       it 'entiende gastar_energia!':
         expect(Pepita).to respond_to :gastar_energia!
     """
-    Pepita.gastar_energia()
+    Pepita.volar_hacia(_Iruya)
+    Pepita.gastar_energia(_Iruya)
 
   def test_puede_calcular_la_distancia_hasta_Iruya_estando_en_Oberá(self):
     """

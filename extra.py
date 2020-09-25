@@ -19,13 +19,36 @@ class ciudadClass:
     return None
 
   @property
-  def kilometros(self):
+  def kilometros(self): #compatibilidad para atras?
     return self._kilometros
 
-  def distancia_con(self, una_ciudad):
+  def distancia_con(self, una_ciudad): #compatibilidad para atras?
     #   def self.distancia(self, una_ciudad):
     #     (self.ciudad.kilometro - una_ciudad.kilometro).abs
     return abs(self.kilometros - una_ciudad.kilometros)
+
+
+  def distancia_a(self, una_ciudad):
+    """
+    usamos en l2/ej11/extra.py
+
+    :param una_ciudad:
+    :return:
+    """
+    #   def self.distancia(self, una_ciudad):
+    #     (self.ciudad.kilometro - una_ciudad.kilometro).abs
+    numeroMayor = max(self.kilómetro(), una_ciudad.kilómetro())
+    numeroMenor = min(self.kilómetro(), una_ciudad.kilómetro())
+    return numeroMayor - numeroMenor
+
+  def kilómetro(self):
+    """
+    usamos en l2/ej11/extra.py
+
+    :param una_ciudad:
+    :return:
+    """
+    return self._kilometros
 
   def __repr__(self):
     return self.nombre
