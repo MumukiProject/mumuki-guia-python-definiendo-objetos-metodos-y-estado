@@ -17,6 +17,11 @@ class Test(unittest.TestCase):
     self.assertEqual(Marambio.distancia_a(Iruya),5270,cartel)
     self.assertEqual(Iruya.distancia_a(Marambio),5270,cartel)
 
+  def test_BuenosAires_puede_calcular_la_distancia_hasta_Ushuaia(self):
+    cartel="La distancia entre Ushuaia y BuenosAires es de 2360 Km. Tanto de ida, como de vuelta ;)"
+    self.assertEqual(BuenosAires.distancia_a(Ushuaia),2360,cartel)
+    self.assertEqual(Ushuaia.distancia_a(BuenosAires),2360,cartel)
+
 
 
 
