@@ -26,7 +26,7 @@ def gastar_energia(self, destino): #¡Ojo! No hicimos Pepita.gastar_energia!(des
 
 
 def volar_hacia(self, destino):
-    self.gastar_energia(destino)
+    self.gastar_energia(destino)  # <--- acá Pepita.volar_hacia() utiliza *otro* método de Pepita
     self.ciudad = destino
 
 Pepita.gastar_energia = gastar_energia
