@@ -5,19 +5,15 @@ def kilómetro(self):
 
 Marambio.kilómetro = kilómetro
 
-Uhuaria = objeto()
+
+Uhuaia = objeto()
 
 def kilómetro(self):
     return 0
 
-Uhuaria.kilómetro = kilómetro
+Uhuaia.kilómetro = kilómetro
 
 
-"""
-module Obera
-  def self.kilometr(self):
-    1040
-"""
 Oberá = objeto()
 
 def kilómetro(self):
@@ -25,28 +21,18 @@ def kilómetro(self):
 
 Oberá.kilómetro = kilómetro
 
-"""
-module Iruya
-  def self.kilometr(self):
-    1710
-"""
+
 Iruya = objeto()
 
 def kilómetro(self):
-    return 4070# completar acá...
+    return 4070
 
 Iruya.kilómetro = kilómetro
 
 
-
-"""
-module BuenosAires
-  def self.kilometr(self):
-    0
-"""
 BuenosAires = objeto()
 
 def kilómetro(self):
-    return 2360# completar acá...
+    return 2360
 
 BuenosAires.kilómetro = kilómetro
