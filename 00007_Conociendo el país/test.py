@@ -1,9 +1,9 @@
 class Test(unittest.TestCase):
   # it 'empieza en Iruya':
   #     expect(Pepita.ciudad).to eq Iruya
-  def test_Pepita_tiene_comenzar_en_Iruya_con_100_de_energia(self):
-    self.assertEqual(100,Pepita.energia,"Pepita.energia vale {} pero debe valer {}".format(Pepita.energia,100))
-    self.assertEqual(Iruya,Pepita.ciudad,"Pepita.ciudad vale {} pero debe valer {}".format(Pepita.ciudad,Iruya))
+  # def test_Pepita_tiene_comenzar_en_Iruya_con_100_de_energia(self):
+  #   self.assertEqual(100,Pepita.energia,"Pepita.energia vale {} pero debe valer {}".format(Pepita.energia,100))
+  #   self.assertEqual(Iruya,Pepita.ciudad,"Pepita.ciudad vale {} pero debe valer {}".format(Pepita.ciudad,Iruya))
 
   def test_Pepita_entiende_el_mensaje_volar_hacia(self):
     # it 'entiende el mensaje volar_hacia!':
