@@ -17,6 +17,7 @@ class Test(unittest.TestCase):
     # it 'pierde 100 unidades de energía cuando vuela':
     #   Pepita.volar_hacia!(Obera)
     #   expect(Pepita.energia).to eq 0
+    Pepita.energia = 200
     Pepita.volar_hacia(Oberá)
     energía_antes=Pepita.energia
     Pepita.volar_hacia(Iruya)
@@ -32,7 +33,7 @@ class Test(unittest.TestCase):
       Pepita.volar_hacia!(Iruya)
       expect(Pepita.ciudad).to eq Iruya
     """
-    Pepita.volar_hacia(BuenosAires)
+    Pepita.volar_hacia(Oberá)
     Pepita.volar_hacia(Iruya)
     cartel="al recibir el mensaje {nombre}.volar_hacia({destino}), nuestra golondrina tiene que  llegar a {destino}".format(nombre="Pepita",destino=_Iruya.nombre)
     self.assertEqual(Iruya,Pepita.ciudad_actual(),cartel)
