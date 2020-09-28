@@ -2,4 +2,4 @@
 expectations:
 - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
   binding: gastar_energia
-  inspection: Uses:dist544ancia_a
+  inspection: Uses:distancia_a
