@@ -6,5 +6,6 @@ editor: code
 type: problem
 extra_visible: true
 manual_evaluation: false
+progressive_expectations: false
 choices: []
 name: Cuestión de estado
